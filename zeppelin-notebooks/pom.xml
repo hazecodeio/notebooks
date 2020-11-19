@@ -2,18 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hsmak</groupId>
-    <artifactId>zeppeline-notebooks</artifactId>
+    <artifactId>zeppelin-notebooks</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>${project.artifactId}</name>
-    <description>My wonderfull scala app</description>
-    <inceptionYear>2018</inceptionYear>
-    <licenses>
-        <license>
-            <name>My License</name>
-            <url>http://....</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -96,7 +87,7 @@
                 <artifactId>scalatest-maven-plugin</artifactId>
                 <version>2.0.0</version>
                 <configuration>
-                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+                    <reportsDirectory>target/surefire-reports</reportsDirectory>
                     <junitxml>.</junitxml>
                     <filereports>TestSuiteReport.txt</filereports>
                     <!-- Comma separated list of JUnit test class names to execute -->
